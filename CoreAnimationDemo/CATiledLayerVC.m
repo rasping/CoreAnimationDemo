@@ -10,6 +10,7 @@
 //参考文章2：http://www.jianshu.com/p/ee5502a1aad3
 
 #import "CATiledLayerVC.h"
+#import "PDFScrollView.h"
 
 @interface CATiledLayerVC ()
 
@@ -23,13 +24,12 @@
     self.title = @"CATiledLayer";
     self.view.backgroundColor = [UIColor whiteColor];
     
-    [self createTiledLayer];
-}
-
-- (void)createTiledLayer
-{
-   
-   
+    PDFScrollView *scrollView = [[PDFScrollView alloc] init];
+    scrollView.frame = self.view.bounds;
+    [self.view addSubview:scrollView];
+    
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"sf_muni" ofType:@"pdf"];
+    [scrollView setPDFPath:filePath];
 }
 
 @end

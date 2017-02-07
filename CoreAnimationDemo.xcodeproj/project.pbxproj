@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B2403C541E49986800A610EC /* PDFScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2403C511E49986800A610EC /* PDFScrollView.m */; };
+		B2403C551E49986800A610EC /* TiledPDFView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2403C531E49986800A610EC /* TiledPDFView.m */; };
 		B24E3ADE1E320B0A00DE2134 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B24E3ADD1E320B0A00DE2134 /* main.m */; };
 		B24E3AE11E320B0A00DE2134 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B24E3AE01E320B0A00DE2134 /* AppDelegate.m */; };
 		B24E3AE41E320B0A00DE2134 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B24E3AE31E320B0A00DE2134 /* ViewController.m */; };
@@ -20,6 +22,7 @@
 		B279FFB31E32F42100CC83FF /* CALayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B279FFB21E32F42100CC83FF /* CALayerVC.m */; };
 		B279FFB61E32F45500CC83FF /* CAShapeLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B279FFB51E32F45500CC83FF /* CAShapeLayerVC.m */; };
 		B279FFB91E32F53A00CC83FF /* CAGradientLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B279FFB81E32F53A00CC83FF /* CAGradientLayerVC.m */; };
+		B2FD58C81E371CEA00F7349E /* large_leaves_70mp.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2FD58C71E371CEA00F7349E /* large_leaves_70mp.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B2403C501E49986800A610EC /* PDFScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFScrollView.h; sourceTree = "<group>"; };
+		B2403C511E49986800A610EC /* PDFScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFScrollView.m; sourceTree = "<group>"; };
+		B2403C521E49986800A610EC /* TiledPDFView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiledPDFView.h; sourceTree = "<group>"; };
+		B2403C531E49986800A610EC /* TiledPDFView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TiledPDFView.m; sourceTree = "<group>"; };
 		B24E3AD91E320B0A00DE2134 /* CoreAnimationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreAnimationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B24E3ADD1E320B0A00DE2134 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B24E3ADF1E320B0A00DE2134 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -65,6 +72,7 @@
 		B279FFB51E32F45500CC83FF /* CAShapeLayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAShapeLayerVC.m; sourceTree = "<group>"; };
 		B279FFB71E32F53A00CC83FF /* CAGradientLayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAGradientLayerVC.h; sourceTree = "<group>"; };
 		B279FFB81E32F53A00CC83FF /* CAGradientLayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAGradientLayerVC.m; sourceTree = "<group>"; };
+		B2FD58C71E371CEA00F7349E /* large_leaves_70mp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = large_leaves_70mp.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,8 +133,7 @@
 				B279FFB51E32F45500CC83FF /* CAShapeLayerVC.m */,
 				B279FFB71E32F53A00CC83FF /* CAGradientLayerVC.h */,
 				B279FFB81E32F53A00CC83FF /* CAGradientLayerVC.m */,
-				B24E9AE11E34816300291FB4 /* CATiledLayerVC.h */,
-				B24E9AE21E34816300291FB4 /* CATiledLayerVC.m */,
+				B2723CD71E36E80300539223 /* CATiledLayer */,
 				B24E3AE51E320B0A00DE2134 /* Main.storyboard */,
 				B24E3AE81E320B0A00DE2134 /* Assets.xcassets */,
 				B24E3AEA1E320B0A00DE2134 /* LaunchScreen.storyboard */,
@@ -139,6 +146,7 @@
 		B24E3ADC1E320B0A00DE2134 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B2FD58C71E371CEA00F7349E /* large_leaves_70mp.jpg */,
 				B24E9AEA1E348EFA00291FB4 /* sf_muni.pdf */,
 				B24E3ADD1E320B0A00DE2134 /* main.m */,
 			);
@@ -161,6 +169,19 @@
 				B24E3B031E320B0A00DE2134 /* Info.plist */,
 			);
 			path = CoreAnimationDemoUITests;
+			sourceTree = "<group>";
+		};
+		B2723CD71E36E80300539223 /* CATiledLayer */ = {
+			isa = PBXGroup;
+			children = (
+				B24E9AE11E34816300291FB4 /* CATiledLayerVC.h */,
+				B24E9AE21E34816300291FB4 /* CATiledLayerVC.m */,
+				B2403C501E49986800A610EC /* PDFScrollView.h */,
+				B2403C511E49986800A610EC /* PDFScrollView.m */,
+				B2403C521E49986800A610EC /* TiledPDFView.h */,
+				B2403C531E49986800A610EC /* TiledPDFView.m */,
+			);
+			name = CATiledLayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +297,7 @@
 				B24E3AEC1E320B0A00DE2134 /* LaunchScreen.storyboard in Resources */,
 				B24E3AE91E320B0A00DE2134 /* Assets.xcassets in Resources */,
 				B24E3AE71E320B0A00DE2134 /* Main.storyboard in Resources */,
+				B2FD58C81E371CEA00F7349E /* large_leaves_70mp.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,9 +325,11 @@
 				B24E9AE31E34816300291FB4 /* CATiledLayerVC.m in Sources */,
 				B279FFB61E32F45500CC83FF /* CAShapeLayerVC.m in Sources */,
 				B279FFB31E32F42100CC83FF /* CALayerVC.m in Sources */,
+				B2403C551E49986800A610EC /* TiledPDFView.m in Sources */,
 				B24E3AE41E320B0A00DE2134 /* ViewController.m in Sources */,
 				B24E3AE11E320B0A00DE2134 /* AppDelegate.m in Sources */,
 				B279FFB91E32F53A00CC83FF /* CAGradientLayerVC.m in Sources */,
+				B2403C541E49986800A610EC /* PDFScrollView.m in Sources */,
 				B24E3ADE1E320B0A00DE2134 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
